@@ -1,11 +1,6 @@
 import React, { useState } from "react";
 // import { Formik, Field, Form, useField, FieldArray } from "formik";
-import {
-  TextField,
-  Button,
-  FormControlLabel,
-  MenuItem
-} from "@material-ui/core";
+import { TextField, Button } from "@material-ui/core";
 // import * as yup from "yup";
 
 import { axiosWithAuth } from "../utils/axiosWithAuth";
@@ -33,7 +28,7 @@ const Login = (props) => {
       isLoading: true
     });
     axiosWithAuth()
-      .post("login", credentials)
+      .post("/api/login", credentials)
       .then((res) => {
         console.log(res);
         window.localStorage.setItem("token", res.data.payload);

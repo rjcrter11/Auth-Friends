@@ -1,6 +1,7 @@
 import React from "react";
 import { BrowserRouter as Router, Route, Link, Switch } from "react-router-dom";
 
+import PrivateRoute from "./components/PrivateRoute";
 import Login from "./components/Login";
 import Friends from "./components/Friends";
 
@@ -22,7 +23,7 @@ function App() {
           </li>
         </ul>
         <Switch>
-          <Route exact path="/friends" component={Friends} />
+          <PrivateRoute exact path="/friends" component={Friends} />
           <Route path="/login" component={Login} />
           <Route path="/" />
         </Switch>
