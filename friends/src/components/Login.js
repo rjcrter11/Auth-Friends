@@ -40,7 +40,7 @@ const Login = (props) => {
   return (
     <div>
       <form className="form" onSubmit={login}>
-        <div className="input-field">
+        <div className="login-input-field">
           <TextField
             type="text"
             name="username"
@@ -50,7 +50,7 @@ const Login = (props) => {
             label="username"
           />
         </div>
-        <div className="input-field">
+        <div className="login-input-field">
           <TextField
             type="password"
             name="password"
