@@ -47,6 +47,7 @@ const Login = (props) => {
             value={credentials.username}
             onChange={handleChange}
             placeholder="Enter Username"
+            label="username"
           />
         </div>
         <div className="input-field">
@@ -55,6 +56,7 @@ const Login = (props) => {
             name="password"
             value={credentials.password}
             onChange={handleChange}
+            label="password"
           />
         </div>
         <Button type="submit">
