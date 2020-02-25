@@ -1,0 +1,27 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+
+  background-image: url("https://wallpapercave.com/wp/WFkjStR.jpg (2)");
+}
+
+.App {
+  text-align: center;
+  padding-bottom: 2%;
+}
+
+ul {
+  display: flex;
+  justify-content: flex-end;
+  padding: 1%;
+}
+
+li {
+  list-style: none;
+  margin-right: 1%;
+}
+
+a {
+  text-decoration: none;
+}
